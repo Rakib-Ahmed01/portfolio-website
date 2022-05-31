@@ -1,10 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
+* {
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+
+.experience h1 {
+  margin: 0;
 }
 
 .name-highlight {
@@ -23,23 +31,111 @@ h3 {
 .half-width {
   width: 40%;
   float: left;
-  margin: 2%;
-  padding: 2%;
+  margin: 2% 4.8%;
+  padding: 1%;
+  /* border: 2px solid red; */
 }
 
 .half-width img {
   width: 100%;
+  height: 100%;
 }
 
 .half-width a {
   text-decoration: none;
-  bbackground: rgb(255, 99, 71);
-  background: linear-gradient(
-    45deg,
-    rgba(255, 99, 71, 1) 0%,
-    rgba(255, 160, 122, 1) 100%
-  );
-  padding: 10px 15px;
+  background: rgb(255, 99, 71);
+  background: linear-gradient(45deg, #ffa07a 0%, #ff6347 100%);
+  padding: 10px 20px;
+  border-radius: 5px;
   color: white;
   font-weight: 500;
+  /* margin-top: 10px; */
+  display: inline-block;
+}
+
+.half-width div {
+  width: 100%;
+  height: 100%;
+}
+
+.top-banner {
+  background-image: url("images/top-banner.png");
+  background-repeat: no-repeat;
+  /* border: 2px solid blue; */
+}
+
+/* .half-width::after {
+  content: "";
+  display: block;
+  clear: both;
+} */
+
+section {
+  height: 600px;
+}
+
+/* .second-heading {
+  margin-top: -50px;
+}
+
+.first-heading {
+  margin-top: 20px;
+} */
+
+.second-banner {
+  background-image: url("images/dream-bg.png");
+  background-repeat: no-repeat;
+  /* position: relative;
+  right: 0; */
+  background-position: right;
+}
+
+.experience h2 {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.experience {
+  background-image: url("images/exp-bg.png");
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+/* section {
+  border: 2px solid black;
+}
+
+.half-width {
+  border: 2px solid red;
+} */
+
+.experience .half-width {
+  height: 63%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.experience .left {
+  border-left: 7px solid;
+  border-radius: 3px;
+  border-image: linear-gradient(to bottom, blue, cyan);
+  border-image-slice: 1;
+}
+
+.experience .right {
+  border-left: 7px solid;
+  border-radius: 3px;
+  border-image: linear-gradient(180deg, #ff6347, #ffa07a);
+  border-image-slice: 1;
+}
+
+.experience h3 {
+  margin: 15px 0;
+  color: tomato;
+}
+
+footer p {
+  text-align: center;
+  color: rgb(134, 132, 132);
+  font-size: 18px;
 }
